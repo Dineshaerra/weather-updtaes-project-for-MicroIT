@@ -1,0 +1,133 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://www.onlygfx.com/wp-content/uploads/2021/07/cartoon-cloud-sky-background-4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 300px;
+  background: linear-gradient(to bottom right, #151516, #6c788b);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 4px 0 12px rgba(0,0,0,0.3);
+}
+
+.sidebar h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sidebar input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.sidebar button {
+  padding: 12px;
+  border: none;
+  background-color: #9baed8;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #8d9fd3;
+}
+
+/* Search history */
+.history h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.history li {
+  background-color: rgba(255,255,255,0.1);
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.history li:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: auto;
+}
+
+.main-content h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Weather Display */
+#weatherDisplay {
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Forecast Cards */
+#forecastCards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  width: 100px;
+  display: inline-block;
+  color: white;
+
+}
+
+.forecast-card h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}

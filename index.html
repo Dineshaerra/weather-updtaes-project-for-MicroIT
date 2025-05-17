@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Weather App</h2>
+      <input type="text" id="cityInput" placeholder="Enter city">
+      <button id="searchBtn">Search</button>
+      <div class="history">
+        <h3>Search History</h3>
+        <ul id="historyList"></ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div id="currentWeather">
+        <h3>Current Weather</h3>
+        <div id="weatherDisplay"></div>
+      </div>
+
+      <div id="forecast">
+        <h3>5-Day Forecast</h3>
+        <div id="forecastCards"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
